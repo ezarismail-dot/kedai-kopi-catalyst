@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kopi Tegalan – Kedai Kopi Lokal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR (feature/navbar) ===== -->
+  <header class="navbar">
+    <a href="#home" class="logo">Kopi Tegalan</a>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Buka menu">☰</button>
+    <nav id="nav-links" class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HOME / HERO (feature/homepage) ===== -->
+    <section id="home" class="hero">
+      <h1>Kopi Tegalan</h1>
+      <p>Kopi susu gula aren dan teh poci khas Tegal, diseduh pelan untuk teman ngobrol sore hari.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn">Lihat Menu</a>
+        <a href="#contact" class="btn btn-outline">Hubungi Kami</a>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT (feature/about) ===== -->
+    <section id="about" class="section">
+      <h2>Tentang Kami</h2>
+      <div class="about-grid">
+        <p>Kopi Tegalan berdiri tahun 2024 dari warung kecil di pinggir Tegal. Kami ingin menyajikan kopi yang enak dengan harga yang ramah untuk mahasiswa dan pekerja.</p>
+        <ul>
+          <li><strong>Visi:</strong> Jadi tempat ngopi favorit anak muda Tegal.</li>
+          <li><strong>Misi:</strong> Memakai biji kopi dan gula aren dari petani lokal.</li>
+          <li><strong>Jam buka:</strong> Setiap hari, 10.00 – 22.00 WIB.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT: MENU (feature/main-content) ===== -->
+    <section id="menu" class="section section-alt">
+      <h2>Menu Kami</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="semua">Semua</button>
+        <button class="filter-btn" data-filter="kopi">Kopi</button>
+        <button class="filter-btn" data-filter="non-kopi">Non-Kopi</button>
+        <button class="filter-btn" data-filter="makanan">Makanan</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="card" data-category="kopi">
+          <div class="card-img">☕</div>
+          <h3>Kopi Susu Gula Aren</h3>
+          <p>Espresso, susu segar, dan gula aren.</p>
+          <span class="price">Rp 18.000</span>
+        </article>
+        <article class="card" data-category="kopi">
+          <div class="card-img">☕</div>
+          <h3>Americano</h3>
+          <p>Espresso dengan air panas, rasa bersih.</p>
+          <span class="price">Rp 15.000</span>
+        </article>
+        <article class="card" data-category="kopi">
+          <div class="card-img">☕</div>
+          <h3>V60 Tegal Blend</h3>
+          <p>Seduh manual dari biji pilihan kami.</p>
+          <span class="price">Rp 22.000</span>
+        </article>
+        <article class="card" data-category="non-kopi">
+          <div class="card-img">🍵</div>
+          <h3>Teh Poci</h3>
+          <p>Teh melati wangi, disajikan dalam poci.</p>
+          <span class="price">Rp 10.000</span>
+        </article>
+        <article class="card" data-category="non-kopi">
+          <div class="card-img">🍫</div>
+          <h3>Cokelat Dingin</h3>
+          <p>Cokelat pekat dengan es batu.</p>
+          <span class="price">Rp 17.000</span>
+        </article>
+        <article class="card" data-category="non-kopi">
+          <div class="card-img">🍋</div>
+          <h3>Lemon Tea</h3>
+          <p>Teh hitam, lemon, dan sedikit madu.</p>
+          <span class="price">Rp 12.000</span>
+        </article>
+        <article class="card" data-category="makanan">
+          <div class="card-img">🍞</div>
+          <h3>Roti Bakar Cokelat Keju</h3>
+          <p>Roti tebal, cokelat leleh, parutan keju.</p>
+          <span class="price">Rp 14.000</span>
+        </article>
+        <article class="card" data-category="makanan">
+          <div class="card-img">🍟</div>
+          <h3>Kentang Goreng</h3>
+          <p>Renyah, dengan saus sambal atau mayo.</p>
+          <span class="price">Rp 13.000</span>
+        </article>
+        <article class="card" data-category="makanan">
+          <div class="card-img">🥟</div>
+          <h3>Pisang Goreng Madu</h3>
+          <p>Pisang kepok goreng, siram madu.</p>
+          <span class="price">Rp 12.000</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT (feature/contact) ===== -->
+    <section id="contact" class="section">
+      <h2>Kontak</h2>
+      <ul class="contact-list">
+        <li>Alamat: Jl. Contoh No. 12, Tegal, Jawa Tengah</li>
+        <li>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank" rel="noopener">0812-3456-7890</a></li>
+        <li>Instagram: <a href="https://instagram.com" target="_blank" rel="noopener">@kopitegalan</a></li>
+      </ul>
+      <a href="https://wa.me/6281234567890" class="btn" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Kopi Tegalan. Dibuat untuk Weekly Meet Catalyst.</p>
+    <p><a href="#home">Kembali ke atas</a></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
